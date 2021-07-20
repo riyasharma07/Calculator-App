@@ -8,8 +8,9 @@ export default class Calc extends React.Component{
     return(
       <View style={styles.layout}>
       <Text>Screen </Text>
-      <Button/>
+      
       <Screen/>
+      <Button/>
       </View>
     )
   }

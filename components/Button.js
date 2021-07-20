@@ -9,7 +9,7 @@ export default class Button extends React.Component{
 }
 const styles=StyleSheet.create({
   button:{
-    flex:3,
+    flex:7,
     borderWidth:1,
     borderColor:'red'
   }
