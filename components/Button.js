@@ -19,6 +19,13 @@ export default class Button extends React.Component{
       <Pressable style={styles.leftdigits}><Text style={styles.textofnum}>1</Text></Pressable>
       </View>
       <View style={styles.rightbtn}>
+     
+      <Pressable style={styles.rightdigits}><Text style={styles.rightnum}>÷</Text></Pressable>
+      <Pressable style={styles.rightdigits}><Text style={styles.rightnum}>x</Text></Pressable>
+      <Pressable style={styles.rightdigits}><Text style={styles.rightnum}>+</Text></Pressable>
+      <Pressable style={styles.rightdigits}><Text style={styles.rightnum}>-</Text></Pressable>
+      <Pressable style={styles.rightdigits}><Text style={styles.equalsbtn}>=</Text></Pressable>
+
 
 
       </View>
@@ -31,21 +38,21 @@ const styles=StyleSheet.create({
 btn:{
     flex:7,
     borderWidth:1,
-    borderColor:'red',
+    borderColor:'#51E1ED',
     flexDirection:'row'
   },
   leftbtn:{
     width:'33.33%',
     flex:8,
-    borderWidth:1,
-    borderColor:'red',
+    //  borderWidth:1,
+    //  borderColor:'#51E1ED',
     flexDirection:'row',
     flexWrap:'wrap'
   },
   rightbtn:{
     flex:2,
-    borderWidth:1,
-    borderColor:'red'
+    // borderWidth:1,
+    // borderColor:'red'
 
   },
   leftdigits:{
@@ -60,5 +67,37 @@ btn:{
     // borderColor: 'black',
     flex: 1,
     textAlign: 'center',
+    color:'white'
+  },
+  rightdigits:{
+    height: '18%',
+    justifyContent: 'center',
+  },
+  rightnum:{
+    flex: 1,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    
+    color:"#51E1ED",
+    marginTop: 8,
+    marginBottom: 8,
+    height: 40,
+    paddingTop: 8,
+    borderRadius: 40,
+    fontSize:30
+  },
+  equalsbtn:{
+    flex: 1,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    color:"white",
+    backgroundColor:"#51E1ED",
+    marginTop: 8,
+    marginBottom: 8,
+    height: 40,
+    paddingTop: 8,
+    borderRadius: 40,
+    fontSize:30
+
   }
 })
