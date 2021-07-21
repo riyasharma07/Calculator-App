@@ -17,6 +17,9 @@ export default class Button extends React.Component{
       <Pressable style={styles.leftdigits}><Text style={styles.textofnum}>3</Text></Pressable>
       <Pressable style={styles.leftdigits}><Text style={styles.textofnum}>2</Text></Pressable>
       <Pressable style={styles.leftdigits}><Text style={styles.textofnum}>1</Text></Pressable>
+      <Pressable style={styles.leftdigits}><Text style={styles.textofnum}>H</Text></Pressable>
+      <Pressable style={styles.leftdigits}><Text style={styles.textofnum}>0</Text></Pressable>
+      <Pressable style={styles.leftdigits}><Text style={styles.textofnum}>.</Text></Pressable>
       </View>
       <View style={styles.rightbtn}>
      
@@ -65,39 +68,38 @@ btn:{
      fontSize: 30,
     // borderWidth: 1,
     // borderColor: 'black',
-    flex: 1,
+    // flex: 1,
     textAlign: 'center',
     color:'white'
   },
   rightdigits:{
-    height: '18%',
+    //borderColor: 'red',
+    // borderWidth: 1,
+    height: '20%',
     justifyContent: 'center',
+
+    
   },
   rightnum:{
-    flex: 1,
+    fontSize: 30,
+    // borderWidth: 1,
+    color: '#51E1ED',
+    // flex: 1,
     textAlign: 'center',
-    textAlignVertical: 'center',
     
-    color:"#51E1ED",
-    marginTop: 8,
-    marginBottom: 8,
-    height: 40,
-    paddingTop: 8,
-    borderRadius: 40,
-    fontSize:30
   },
   equalsbtn:{
-    flex: 1,
+    fontSize: 30,
+    // borderWidth: 1,
+    // borderColor: 'black'    
     textAlign: 'center',
     textAlignVertical: 'center',
-    color:"white",
-    backgroundColor:"#51E1ED",
-    marginTop: 8,
-    marginBottom: 8,
-    height: 40,
-    paddingTop: 8,
+    backgroundColor: '#51E1ED',
+    color: 'white',
+    paddingTop:9 ,
+    paddingBottom:9, 
     borderRadius: 40,
-    fontSize:30
+    
 
   }
 })
